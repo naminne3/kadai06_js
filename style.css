@@ -1,0 +1,123 @@
+
+/* 全体 */
+body {
+    font-family: 'Garamond', 'serif'; /* エレガントなフォント */
+    background-color: #f8f8f8; /* 淡いベージュ */
+    color: #333; 
+  }
+  
+  /* ヘッダー */
+  header {
+    background-color: #4d4d4d; /* 暗めのグレー */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0; 
+    border-bottom: 2px solid #b3b3b3; /* 下線 */
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0; 
+  }
+  
+  /* 地図 */
+  #map {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto; 
+    border: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 軽い影 */
+  }
+  
+  /* お気に入りリスト */
+  #favorite-list {
+    width: 90%;
+    margin: 20px auto; 
+    padding: 1.5rem;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+  }
+  
+  #favorite-list h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #ddd; /* 下線 */
+    padding-bottom: 0.5rem; 
+  }
+  
+  #favorite-items {
+    padding: 0; 
+  }
+  
+  #favorite-items li {
+    list-style: none; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0; /* 枠線 */
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    display: flex; /* 削除ボタンを右に配置 */
+    align-items: center; /* 垂直方向に中央揃え */
+  }
+  
+  /* 削除ボタン */
+  .delete-button {
+    background-color: #d9534f; /* 赤 */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: auto; /* 左に自動マージン */
+  }
+  
+  /* input.html */
+  #favorite-form {
+    width: 90%;
+    margin: 20px auto;
+    padding: 1.5rem;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+  }
+  
+  #favorite-form label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold; 
+  }
+  
+  #favorite-form input[type="text"],
+  #favorite-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  #favorite-form button[type="submit"] {
+    background-color: #5cb85c; /* 緑 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* レスポンシブ */
+  @media (max-width: 768px) {
+    #map {
+      width: 100%;
+      height: 300px;
+    }
+  
+    #favorite-list,
+    #favorite-form {
+      width: 95%; 
+    }
+  } 
+
+  
